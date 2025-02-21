@@ -87,7 +87,6 @@ p {
 .logo {
     color: #69B9FF;
     font-size: 25px;
-    font-style: normal;
     font-weight: 400;
     line-height: 25px; /* 100% */
     letter-spacing: 4px;
@@ -105,7 +104,7 @@ p {
 .header__nav a {
     color: #676770;
     font-size: 16px;
-    line-height: 20px; /* 125% */   
+    transition: color 0.2s;
 }
 
 .header__nav a:hover {
@@ -127,7 +126,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
 
     background-color: #0018f3;
@@ -138,9 +136,9 @@ p {
 }
 
 .welcome__heading {
-    margin-bottom:  100px;
+    margin-bottom:  100px; 
     font-size: 59px;
-    line-height: 60px; /* 101.695% */
+    line-height: 1; /* 101.695% */
     letter-spacing: 4px;
     text-transform: uppercase;    
 }
@@ -153,13 +151,12 @@ p {
     padding: 10px 30px;
 
     font-size: 16px;
-    line-height: 21px; /* 131.25% */
     letter-spacing: 2px;
     text-transform: uppercase;
 
     border-radius: 4px;
     border: 1px solid #FFF;
-    transition: border-color 0.1s, background-color 0.1s;
+    transition: border-color 0.2s, background-color 0.2s;
 }
 
 .link-ptimary {
@@ -171,6 +168,7 @@ p {
 
     border-radius: 4px;
     background: #69B9FF;   
+    transition: border-color 0.2s, background-color 0.2s;
 }
 
 .link-ptimary:hover {
