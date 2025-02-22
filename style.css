@@ -14,7 +14,6 @@ p {
 
 .title {
     margin-bottom: 17px;
-
     color: #676770;
     font-size: 30px;
     line-height: 1.2; /* 120% */
@@ -193,23 +192,26 @@ p {
 /*----- About -----*/
 
 
+.about {
+    text-align: center;
+}
+
 .about .cards-wrapper {
-    padding: 62px;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
 }
 
 .about .card {
     width: 300px;
-    padding: 36px 16px 23px 16px;
+    padding: 35px 15px 20px 15px;
     border-radius: 5px;
     border: 1px solid #DCEBF7;
 }
 .about .card img {
     width: 94px;
     height: 94px;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
+    object-fit: contain;
 }
 
 .about .card h4 {
