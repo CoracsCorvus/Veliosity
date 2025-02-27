@@ -46,6 +46,9 @@ p {
     color: #E8E8E8;
 }
 
+.hide {
+    display: none !important;
+}
 /* Стили классов*/
 
 .container{
@@ -264,6 +267,19 @@ p {
     margin: 62px 0 40px;
 
 }
+
+.tabs__item {
+    animation: fade 1s;   
+}
+@keyframes fade {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 .tabs__nav button + button {
    margin-left: 16px;
