@@ -19,9 +19,6 @@ function showTab(index) {
 }
 
 
-hideTabs();
-showTab(0);
-
 tabsBtns.forEach((btn, index) => btn.addEventListener("click", () => {
     hideTabs();
     showTab(index);
@@ -35,7 +32,13 @@ anchors.forEach(anc => {
     anc.addEventListener("click", function(event) {
         event.preventDefault();
 
-        
+        const id = anc.getAttribute("href");
+        const elem = document.querySelector(id);
+
+        window.scroll({
+            top: elem.offsetTop - 80,
+            behavior: 'smooth' //медленная прокрутка - то, ради чего и делали
+        });
     });
 })
 
